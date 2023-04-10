@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Personas:</h2>
+            <hr />
+        </div>
+    </div>
+</div>
+<br />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/JavaScript.js" "></script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+        </div>
+        <div class="col-md-1" style="padding-left:100px">
+            <button type="button" id="btnGetAll" class="btn btn btn-success" value="" onclick="GetAll()">Agregar</button>
+        </div>
+        <div class="col-md-1" style="padding-left:100px">
+            <button type="button" id="btnLimpiar" class="btn btn btn-info" value="" onclick="Limpiar()">Limpiar Historial</button>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <table id="tblPersonas" class="table table-hover" border="1">
+                <thead>
+                    <tr>
+                        <th class="text-center" scope="col">IdPersona</th>
+                        <th class="text-center" scope="col">Nombre</th>
+                        <th class="text-center" scope="col">Email</th>
+                        <th class="text-center" scope="col">Genero</th>
+                        <th class="text-center" scope="col">Pais</th>
+                        <th class="text-center" scope="col">Imagen</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
